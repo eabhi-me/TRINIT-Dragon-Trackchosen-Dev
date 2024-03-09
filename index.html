@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test-Formatter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/2afbc17d79.js" crossorigin="anonymous"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Protest+Strike&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+<body>
+
+<!----Navbar------->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid ">
+          <a class="navbar-brand logo-txt" href="#">Test-Formatter</Test-Formatter></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#By-Pdf">By-Pdf</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Manually">Manually</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <!--Info Section-->
+    <div class="float info-txt">
+        <h3>
+            Here you can upload your question paper and get the formatted question paper in return.
+        </h3>
+    </div>
+    <div>
+        <h3>Upload your File Here</h3>
+    </div>
+    <div class="float">
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="pdfFile" accept=".pdf">
+        <input type="submit" value="Upload">
+    </form>
+    <h1 id="By-Pdf">Question Paper Uploader</h1>
+    <form id="uploadForm" action="/upload_question_paper" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".pdf" required>
+        <button class="btn btn-warning" type="submit">Upload Question Paper</button>
+    </form>
+    <h3>Generate Mock Test</h3>
+    <form id="generateForm" action="/generate_mock_test" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".pdf" required>
+        <button class="btn btn-primary btn-me" type="submit">Generate Mock Test</button>
+    </form>
+    </div>
+
+<!----Footer bar added if needed------->
+<!--------
+    <footer class="footer-box">
+        <div class="container">
+            <div>
+                <div class="social">
+                    <a href=""><i class="fa-brands fa-instagram social-icon-me"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter social-icon-me"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin social-icon-me"></i></a>
+                    <a href=""><i class="fa-brands fa-github social-icon-me"></i></a>
+                </div>
+            </div>
+            <div>
+                <p class="copyright">&copy; 2024 Test-Formatter | All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    -->
+</body>
+</html>
