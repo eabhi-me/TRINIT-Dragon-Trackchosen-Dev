@@ -1,4 +1,4 @@
-# TRINIT-Dragon-Trackchosen-Dev"
+# TRINIT-Dragon-Trackchosen-Dev
 <li><a href="#problem-statement">Problem Statement</a></li>
 <li><a href="#solution">Solution</a></li>
 
