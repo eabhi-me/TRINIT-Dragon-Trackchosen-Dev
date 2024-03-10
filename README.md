@@ -1,6 +1,6 @@
 # TRINIT-Dragon-Trackchosen-Dev
 <li><a href="#problem-statement">Problem Statement</a></li>
-<li><a href="#solution">Solution</a></li>
+<li><a href="https://drive.google.com/file/d/1Xh0ZVpm9IoPs3KUa59eUaAMnd0rDB9vy/view?usp=drivesdk">Solution Video Clip</a></li>
 
 <h2 id="problem-statement">Problem statement: Test Formatter </h2>
 Idea: A site where students can upload pdf of question papers of exams such as 
