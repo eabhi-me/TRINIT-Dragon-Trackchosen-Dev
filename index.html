@@ -47,13 +47,13 @@
     </div>
     <div class="float">
     <form action="/upload" method="post" enctype="multipart/form-data">
-        <input type="file" name="pdfFile" accept=".pdf">
-        <input type="submit" value="Upload">
+        <input type="file" name="pdfFile" accept=".pdf" required>
+        <input class="btn-me" type="submit" value="Upload">
     </form>
     <h1 id="By-Pdf">Question Paper Uploader</h1>
     <form id="uploadForm" action="/upload_question_paper" method="post" enctype="multipart/form-data">
         <input type="file" name="file" accept=".pdf" required>
-        <button class="btn btn-warning" type="submit">Upload Question Paper</button>
+        <button class="btn btn-warning btn-me" type="submit">Upload Question Paper</button>
     </form>
     <h3>Generate Mock Test</h3>
     <form id="generateForm" action="/generate_mock_test" method="post" enctype="multipart/form-data">
@@ -63,7 +63,6 @@
     </div>
 
 <!----Footer bar added if needed------->
-<!--------
     <footer class="footer-box">
         <div class="container">
             <div>
@@ -80,6 +79,6 @@
         </div>
     </footer>
 
-    -->
+    <script src="script.js"></script>
 </body>
 </html>
